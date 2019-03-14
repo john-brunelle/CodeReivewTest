@@ -44,11 +44,11 @@ class ViewController: UIViewController {
         // I added this comment for codereview testing. I added this comment
         //for codereview testing.
         
-        //11111111111111111111111111111111111111mmsdmasmdfmasdfmasmdfmasdfmasmdfmas
+        //1111111111111111111111111111111111
         
-        //11111111111111111111111111111111111111mmsdmasmdfmasdfmasmdfmasdfmasmdfmas
-        
-        //11111111111111111111111111111111111111mmsdmasmdfmasdfmasmdfmasdfmasmdfmasvvvvvvvvvvvvvvvvnvnvnvnvnvnvnvnvnvnvnvnvnvnvn
+        //11111111111111111111111111111111111
+    
+        //1111111111111111111111111111111111111
     }
     
     func createImages(){
