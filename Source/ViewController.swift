@@ -23,12 +23,12 @@ class ViewController: UIViewController {
     
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
-    enum CharacterType{
-        case Ninja
-        case Pirate
-    }
-    
-    let hideout = "My ninja can hide in this string"
+//    enum CharacterType{
+//        case Ninja
+//        case Pirate
+//    }
+//
+//    let hideout = "My ninja can hide in this string"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         //for codereview testing.
         //11111111111111111111111111111111111111mmsdmasmdfmasdfmasmdfmasdfmasmdfmas
         //111111111111111111111111111111111111111111111111//111111111111111111111111111111111111 100
-        //111111111111111111111111111111111111111111111111//111111111111111111111111111111111111 1011
+        //111111111111111111111111111111111111111111111111//111111111111111111111111111111111111 101
     }
     
     func createImages(){
