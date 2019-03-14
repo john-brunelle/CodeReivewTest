@@ -43,11 +43,8 @@ class ViewController: UIViewController {
 
         // I added this comment for codereview testing. I added this comment
         //for codereview testing.
-        
         //1111111111111111111111111111111111
-        
         //11111111111111111111111111111111111
-    
         //1111111111111111111111111111111111111
     }
     
