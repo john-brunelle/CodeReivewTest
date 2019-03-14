@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ttg-aa-vGM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Center View Controller-->
+        <scene sceneID="rry-tC-cXb">
+            <objects>
+                <viewController id="Ttg-aa-vGM" customClass="CenterViewController" customModule="Alliance_One" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yrk-Ql-OcO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKk-Of-4Ck">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-va-L6s">
+                                        <rect key="frame" x="137.5" y="95" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="EYz-ZB-Wq8"/>
+                                            <constraint firstAttribute="width" constant="100" id="Nl5-cP-0Nu"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="00G-Vp-cDH"/>
+                                    <constraint firstItem="rIq-va-L6s" firstAttribute="centerX" secondItem="pKk-Of-4Ck" secondAttribute="centerX" id="2jO-kM-pzd"/>
+                                    <constraint firstAttribute="bottom" secondItem="rIq-va-L6s" secondAttribute="bottom" constant="5" id="YTf-M3-9bh"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="idB-Kn-86a">
+                                <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personaCell" id="ehw-yu-Zut" customClass="CenterViewControllerCell" customModule="Alliance_One" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ehw-yu-Zut" id="qqR-Ag-ZSg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9A-On-gf2">
+                                                    <rect key="frame" x="52" y="0.0" width="323" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="br4-ji-3WL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="J9j-fn-1LP"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="q9A-On-gf2" secondAttribute="bottom" id="2Pa-gc-f40"/>
+                                                <constraint firstItem="br4-ji-3WL" firstAttribute="leading" secondItem="qqR-Ag-ZSg" secondAttribute="leading" id="7Gv-mR-m4f"/>
+                                                <constraint firstAttribute="trailing" secondItem="q9A-On-gf2" secondAttribute="trailing" id="QcG-Og-Fd7"/>
+                                                <constraint firstAttribute="bottom" secondItem="br4-ji-3WL" secondAttribute="bottom" id="T3e-Bi-WNl"/>
+                                                <constraint firstItem="q9A-On-gf2" firstAttribute="leading" secondItem="br4-ji-3WL" secondAttribute="trailing" constant="8" id="kHn-y8-jga"/>
+                                                <constraint firstItem="br4-ji-3WL" firstAttribute="top" secondItem="qqR-Ag-ZSg" secondAttribute="top" id="qvq-uV-odj"/>
+                                                <constraint firstItem="q9A-On-gf2" firstAttribute="top" secondItem="qqR-Ag-ZSg" secondAttribute="top" id="x7W-oB-tjO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="personaImage" destination="br4-ji-3WL" id="32B-s4-ZUN"/>
+                                            <outlet property="personaName" destination="q9A-On-gf2" id="ITm-7k-4jD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="idB-Kn-86a" firstAttribute="leading" secondItem="cfJ-Ml-w34" secondAttribute="leading" id="D5C-Zv-Ypp"/>
+                            <constraint firstItem="idB-Kn-86a" firstAttribute="bottom" secondItem="cfJ-Ml-w34" secondAttribute="bottom" id="EvY-yw-jWk"/>
+                            <constraint firstItem="pKk-Of-4Ck" firstAttribute="trailing" secondItem="cfJ-Ml-w34" secondAttribute="trailing" id="QfC-PR-q38"/>
+                            <constraint firstItem="idB-Kn-86a" firstAttribute="top" secondItem="pKk-Of-4Ck" secondAttribute="bottom" id="X14-0I-1pz"/>
+                            <constraint firstItem="idB-Kn-86a" firstAttribute="trailing" secondItem="cfJ-Ml-w34" secondAttribute="trailing" id="ujH-X9-Lzy"/>
+                            <constraint firstItem="pKk-Of-4Ck" firstAttribute="leading" secondItem="cfJ-Ml-w34" secondAttribute="leading" id="xUn-Op-em4"/>
+                            <constraint firstItem="pKk-Of-4Ck" firstAttribute="top" secondItem="yrk-Ql-OcO" secondAttribute="top" id="yNr-Cx-DNq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cfJ-Ml-w34"/>
+                    </view>
+                    <connections>
+                        <outlet property="personaImage" destination="rIq-va-L6s" id="Icg-yN-otx"/>
+                        <outlet property="tableView" destination="idB-Kn-86a" id="pIK-uU-G0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmU-KO-6yS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>
