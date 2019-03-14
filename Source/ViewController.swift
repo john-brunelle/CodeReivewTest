@@ -41,9 +41,8 @@ class ViewController: UIViewController {
         view.addSubview(drawerVC.view)
         drawerVC.didMove(toParent: self)
 
-        
-                // I added this comment for codereview testing. I added this comment for codereview testing. I added this comment for codereview testing. I added this comment for codereview testing. I added this comment for codereview testing. I added this comment for codereview testing.
-  
+        // I added this comment for codereview testing. I added this comment
+        //for codereview testing. 
     }
     
     func createImages(){
