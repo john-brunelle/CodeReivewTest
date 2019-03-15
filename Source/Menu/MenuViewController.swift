@@ -31,7 +31,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         data.removeAll()
         if let storeReleasePersona = delegate.currentStoreReleasePersona {
             
-            //print("+++++++++++= MENU  = \(String(describing: storeReleasePersona.display_name))")//
+            //print("+++++++++++= MENU  = \(String(describing: storeReleasePersona.display_name))")
             
             if let imageURL =  delegate.currentStoreReleasePersona?.logo_url,
                 let url = URL(string: imageURL){
