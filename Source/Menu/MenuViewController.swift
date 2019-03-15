@@ -88,4 +88,3 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 44
     }
 }
-
