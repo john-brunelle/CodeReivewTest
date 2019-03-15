@@ -27,7 +27,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func updateMenu(){
-    
         data.removeAll()
         if let storeReleasePersona = delegate.currentStoreReleasePersona {
             
