@@ -27,7 +27,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func updateMenu(){
-        //111111111111111111111111111111111111111111111111//1111111111111111111111111111111111111111111 100 1
         
         data.removeAll()
         if let storeReleasePersona = delegate.currentStoreReleasePersona {
@@ -46,7 +45,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             if let menu = storeReleasePersona.menu_id {
                 if let menuTreeItems = menu.menuTreeItems() {
                     for menuTreeItem in menuTreeItems {
-                       // print("+++++++++++= menuTreeItem  = \(menuTreeItem)")
+                        // print("+++++++++++= menuTreeItem  = \(menuTreeItem)")
                         
                         print("ccccc+++++++++++= menuTreeItem.labels  = \(menuTreeItem.menuLabel()!)")
                         
@@ -81,11 +80,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-       // let releasePersona = data[indexPath.row]
+        // let releasePersona = data[indexPath.row]
         
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
 }
+
